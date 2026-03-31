@@ -1086,6 +1086,7 @@ main, section, footer{
     <a class="navPill" href="#equipment">Vybavení</a>
     <a class="navPill" href="#faq">FAQ</a>
         <a class="navPill" href="#contacts">Kontakty</a>
+    <a class="navPill" href="podminky-uzivani.html" target="_blank" rel="noopener">Obchodní podmínky</a>
     <a class="navPill navPillPrimary" href="https://iron-room.reenio.cz/cs/" target="_blank">Rezervovat</a>
   </div>
 </header>
@@ -1184,7 +1185,7 @@ main, section, footer{
       <div class="fineTitle">Provozní řád</div>
       <div class="fineText">
   <b>Před první návštěvou si přečtěte 
-  <a href="provozni-rad.html" target="_blank" rel="noopener" style="text-decoration:underline; text-underline-offset:3px;">
+  <a href="podminky-uzivani.html" target="_blank" rel="noopener" style="text-decoration:underline; text-underline-offset:3px;">
     Provozní řád
   </a>.
   </b> Rezervací potvrzujete seznámení se s provozním řádem a souhlas s informacemi zde uvedenými.
@@ -1231,7 +1232,7 @@ main, section, footer{
 
         <div class="whereCard">
           <div class="whereTitle">PARKOVÁNÍ</div>
-          <div class="whereText">V ceně máš vyhrazené parkovací místo ve dvoře průjezdem z ulice Přivozské. V brzkých ranních a nočních hodinách může být průjezd uzavřen mříží. V tom případě stačí zavolat na 605 XXX XXX a mříž ti odemkneme na dálku. Při příjezdu se snaž přijet co nejblíže k začátku slotu, při odjezdu naopak opusť parkovací místo včas. Parkuj pouze na místě vyhrazeném pro návštěníky IRON ROOMu</div>
+          <div class="whereText">V ceně máš vyhrazené parkovací místo ve dvoře průjezdem z ulice Přivozské. V brzkých ranních a nočních hodinách může být průjezd uzavřen mříží. V tom případě stačí zavolat na číslo, které obdržíte v SMS s přístupem a mříž ti odemkneme na dálku. Při příjezdu se snaž přijet co nejblíže k začátku slotu, při odjezdu naopak opusť parkovací místo včas. Parkuj pouze na místě vyhrazeném pro návštěníky IRON ROOMu</div>
         </div>
       </div>
     </div>
@@ -1350,7 +1351,7 @@ main, section, footer{
     <div class="contactGrid">
       <div class="contactCard">
         <div class="contactTitle">Telefon</div>
-        <div class="contactValue"><a href="tel:+420605421134">+420 605 XXX XXX</a></div>
+        <div class="contactValue"><a href="tel:+420605421134">+420 605 421 134</a></div>
         <div class="contactHint">Nejrychlejší kontakt v případě potřeby .</div>
       </div>
 
@@ -1369,7 +1370,7 @@ main, section, footer{
       <div class="contactCard contactCTA">
   <div class="contactTitle">Provozní řád</div>
   <div class="contactValue">Pravidla přístupu, storno a bezpečnost.</div>
-  <a class="contactBtn" href="provozni-rad.html" target="_blank" rel="noopener">Otevřít provozní řád</a>
+  <a class="contactBtn" href="podminky-uzivani.html" target="_blank" rel="noopener">Otevřít provozní řád</a>
 </div>
 
     <div class="contactFine">
@@ -1396,7 +1397,6 @@ hero.style.setProperty('--py',0);
 </script>
 
 
-  <a class="floatingCTA" href="https://iron-room.reenio.cz/cs/" target="_blank" aria-label="Rezervovat slot">Rezervovat</a>
 <script>
 (function(){
   const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -1465,20 +1465,29 @@ hero.style.setProperty('--py',0);
 <script>
 (function(){
   const header = document.querySelector('.header');
-  const navLinks = Array.from(document.querySelectorAll('.navPill[href^="#"]'))
-    .filter(a => a.getAttribute('href').length > 1);
 
-  // Header shrink
   const onScrollHeader = () => {
     if (!header) return;
     if (window.scrollY > 12) header.classList.add('header--scrolled');
     else header.classList.remove('header--scrolled');
   };
+
   window.addEventListener('scroll', onScrollHeader, { passive:true });
   onScrollHeader();
+})();
+</script>
 
-  
+
+<footer class="footer">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;justify-content:flex-start;gap:14px;flex-wrap:wrap;">
+      <div style="color:rgba(255,255,255,.6);font-size:12.5px;line-height:1.6;">
+        IRON ROOM • private gym
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 </body>
 </html>
-
-CP260206

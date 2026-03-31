@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IRON ROOM • Podmínky užívání</title>
+  <meta name="description" content="Podmínky užívání služby IRON ROOM: obchodní podmínky, provozní řád a GDPR." />
+  <style>
+:root{
+  --bg:#0b0d12;
+  --bg2:#07080c;
+  --text:#e9edf5;
+  --muted:#a9b1c3;
+  --brand:#f6c800;
+  --brand2:#ffd84a;
+  --line:rgba(255,255,255,.10);
+  --radius:20px;
+  --max:1200px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  color:var(--text);
+  background:
+    radial-gradient(900px 500px at 20% -10%, rgba(246,200,0,.12), transparent 60%),
+    linear-gradient(180deg, var(--bg2) 0%, var(--bg) 60%, var(--bg2) 100%);
+}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:var(--max);margin:auto;padding:0 22px}
+.header{
+  position:sticky;top:0;backdrop-filter: blur(10px);
+  background: rgba(11,13,18,.72);border-bottom:1px solid rgba(255,255,255,.10);
+  z-index: 99999 !important;
+}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:16px;}
+@media (max-width: 920px){
+  .navbar{flex-wrap:wrap;justify-content:center;gap:10px;}
+  .brand{flex-basis:100%;justify-content:center;}
+}
+.brand{display:flex;align-items:center;gap:18px}
+.brandLogo{width:92px;border-radius:18px;border:none;}
+.brandWordmark .t{font-size:28px;font-weight:900;color:var(--brand);text-transform:uppercase;}
+.brandWordmark .s{font-size:12px;letter-spacing:6px;text-transform:uppercase;}
+.navPill{
+  display:inline-flex;align-items:center;justify-content:center;padding:10px 14px;border-radius:999px;
+  font-weight:800;font-size:14px;letter-spacing:.2px;color:var(--text);
+  border:1px solid rgba(255,255,255,.18);background: rgba(255,255,255,.06);
+  backdrop-filter: blur(6px);transition: transform .12s ease, background .12s ease, border-color .12s ease;
+}
+.navPill:hover{transform: translateY(-1px);background: rgba(255,255,255,.09);border-color: rgba(255,255,255,.26);}
+.navPillPrimary{
+  border:1px solid rgba(246,200,0,.55);
+  background: linear-gradient(180deg, rgba(246,200,0,.28), rgba(246,200,0,.10));
+}
+.navPillPrimary:hover{
+  border-color: rgba(246,200,0,.75);
+  background: linear-gradient(180deg, rgba(246,200,0,.34), rgba(246,200,0,.12));
+}
+.section{position:relative;padding:60px 0;}
+.section::after{
+  content:"";position:absolute;left:50%;bottom:0;transform: translateX(-50%);
+  width:min(var(--max, 1200px), calc(100% - 44px));height:10px;border-radius:999px;opacity:.22;
+  background: repeating-linear-gradient(135deg, rgba(246,200,0,.95) 0 10px, rgba(10,11,15,.95) 10px 20px);
+  box-shadow: 0 10px 35px rgba(0,0,0,.35);filter: saturate(1.05);
+}
+.rulesHero{ padding: 22px 0 22px; }
+.rulesTitle{ font-size: 34px; letter-spacing: .2px; margin: 0 0 10px; text-align:center; }
+.rulesMeta{ color: var(--muted); font-size: 13.5px; line-height: 1.6; text-align:center; }
+.rulesGrid{ display:grid; grid-template-columns: 1fr; gap: 16px; max-width:1100px; margin:0 auto; }
+.rulesCard{
+  border:1px solid var(--line);background: rgba(255,255,255,.04);border-radius: 18px;padding: 18px 16px;
+  box-shadow: 0 14px 40px rgba(0,0,0,.25);text-align:left;
+}
+.rulesH2{margin:0 0 14px;font-size:22px;letter-spacing:.2px;}
+.rulesH3{margin: 0 0 10px;font-size: 18px;letter-spacing: .2px;text-align:left;}
+.rulesP{margin: 10px 0;max-width:none;color: var(--muted);line-height: 1.85;text-align:left;}
+.rulesList{margin: 10px 0 0;padding-left: 18px;color: var(--muted);line-height: 1.85;text-align:left;}
+.rulesList li{ margin: 6px 0; }
+.tldr{ display:flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.tldr .pill{
+  display:inline-flex; align-items:center; gap:8px; padding: 10px 12px; border-radius: 999px;
+  border:1px solid rgba(255,255,255,.14); background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.88); font-weight: 800; font-size: 12.5px;
+}
+.tldr .pill strong{ color: var(--text); }
+.hazardDivider{
+  height:10px; border-radius:999px; opacity:.22;
+  background: repeating-linear-gradient(135deg, rgba(246,200,0,.95) 0 10px, rgba(10,11,15,.95) 10px 20px);
+  box-shadow: 0 10px 35px rgba(0,0,0,.35); filter: saturate(1.05);
+  width:min(var(--max, 1200px), calc(100% - 44px)); margin: 20px auto 0;
+}
+.smallNote{ margin-top: 10px; color: rgba(255,255,255,.55); font-size: 12.5px; line-height: 1.6; }
+.footer{padding:20px 0;}
+@media (max-width: 720px){ .rulesTitle{font-size:30px;} .rulesH2{font-size:20px;} }
+  
+.sectionNav{
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin-top:20px;
+  flex-wrap:wrap;
+}
+html{scroll-behavior:smooth;}
+</style>
+
+</head>
+<body>
+<header class="header">
+  <div class="wrap">
+    <div class="navbar">
+      <a class="brand" href="index.html" aria-label="IRON ROOM">
+        <img class="brandLogo" src="logo.png" alt="IRON ROOM logo">
+        <div class="brandWordmark">
+          <div class="t">IRON ROOM</div>
+          <div class="s">PRIVATE GYM</div>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Navigace" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+        <a class="navPill" href="#obchodni">Obchodní podmínky</a>
+        <a class="navPill" href="#provozni">Provozní řád</a>
+        <a class="navPill" href="#gdpr">GDPR</a>
+        <a class="navPill" href="index.html#contacts">Zpět na web</a>
+        <a class="navPill navPillPrimary" href="https://iron-room.reenio.cz/cs/" target="_blank" rel="noopener">Rezervovat</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section" id="terms" style="padding-top: 22px;">
+    <div class="wrap">
+      <div class="rulesHero">
+        <h1 class="rulesTitle">Podmínky užívání služby IRON ROOM:</h1>
+	<h1 class="rulesTitle">Obchodní podmínky, provozní řád a GDPR</h1>
+        <div class="rulesMeta">
+          Odesláním a úhradou rezervace potvrzuješ, že ses s těmito podmínkami seznámil/a a souhlasíš s nimi<br>
+	
+        </div>
+        
+        <div class="hazardDivider" aria-hidden="true"></div>
+        
+      </div>
+
+      <div class="rulesGrid">
+        <div class="rulesCard" id="obchodni">
+          <h2 class="rulesH2">1. Obchodní podmínky</h2>
+          <h3 class="rulesH3">1.1 Provozovatel</h3>
+          <ul class="rulesList">
+            <li>Jan Plaček</li>
+            <li>IČ: 22033947</li>
+            <li>Sídlo / místo podnikání: Přívozská 892, Moravská Ostrava a Přívoz</li>
+            <li>E-mail: ironroom.ostrava@gmail.com</li>
+            <li>Telefon: +420 605 421 134</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">1.2 Charakter služby</h3>
+          <ul class="rulesList">
+            <li>IRON ROOM poskytuje krátkodobý pronájem soukromého cvičebního prostoru na konkrétní časový slot.</li>
+            <li>Služba je objednávána online prostřednictvím rezervačního systému.</li>
+            <li>Po dobu rezervace má klient prostor k dispozici výhradně pro sebe, případně pro další osoby v rámci povolené kapacity.</li>
+            <li>Služba je poskytována samoobslužně, bez přítomnosti personálu na místě.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">1.3 Rezervace a vznik smluvního vztahu</h3>
+          <ul class="rulesList">
+            <li>Rezervace probíhá online prostřednictvím rezervačního systému Reenio.</li>
+            <li>Klient si zvolí konkrétní termín a odešle rezervaci.</li>
+            <li>Smluvní vztah vzniká vytvořením rezervace a jejím řádným uhrazením.</li>
+            <li>Neuhrazená rezervace není považována za závazně dokončenou.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">1.4 Cena a platební podmínky</h3>
+          <ul class="rulesList">
+            <li>Cena služby je vždy uvedena u konkrétního časového slotu v rezervačním systému.</li>
+            <li>Platba probíhá online prostřednictvím platební brány GoPay.</li>
+            <li>Rezervaci je nutné uhradit do 60 minut od jejího vytvoření, jinak může rezervace automaticky zaniknout.</li>
+            <li>Provozovatel neukládá údaje o platební kartě klienta.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">1.5 Storno podmínky</h3>
+          <ul class="rulesList">
+            <li>Rezervaci je možno stornovat informováním na email ironroom.ostrava@gmail.com, nejpozději však 24h před začátkem slotu</li>
+            <li>Rezervaci je možno přesunout na jiný volný termín, nebo si nechat poslat peníze zpět.</li>
+            <li>Při zrušení rezervace méně než 24 hodin před začátkem nevzniká nárok na vrácení zaplacené částky.</li>
+            <li>Provozovatel si vyhrazuje právo individuálně posoudit mimořádné situace.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">1.6 Přístup do prostoru</h3>
+          <ul class="rulesList">
+            <li>Po uhrazení rezervace klient obdrží přístupové údaje potřebné pro vstup do prostoru.</li>
+            <li>Přístupové údaje jsou určeny výhradně pro danou rezervaci a nesmí být sdíleny třetím osobám.</li>
+            <li>Kód je nepřenosný a platí pouze pro konkrétní rezervovaný čas.</li>
+            <li>Provozovatel nenese odpovědnost za škody způsobené zneužitím přístupových údajů, pokud je klient zpřístupnil jiné osobě.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">1.7 Odpovědnost a odstoupení od smlouvy</h3>
+          <ul class="rulesList">
+            <li>Klient využívá prostor a vybavení na vlastní odpovědnost.</li>
+            <li>Klient odpovídá za škodu způsobenou na vybavení nebo prostoru úmyslně či z nedbalosti.</li>
+            <li>Vzhledem k tomu, že jde o poskytnutí služby ve volném čase v konkrétním termínu, nemá klient v souladu s § 1837 občanského zákoníku právo odstoupit od smlouvy bez udání důvodu.</li>
+          </ul>
+        </div>
+
+        <div class="rulesCard" id="provozni">
+          <h2 class="rulesH2">2. Provozní řád</h2>
+          <h3 class="rulesH3">2.1 Věk klientů a odpovědnost za nezletilé</h3>
+          <ul class="rulesList">
+            <li>Vstup do prostoru je primárně určen osobám starším 15 let.</li>
+            <li>Osoby ve věku 15 až 17 let mohou prostor využívat pouze v případě, že rezervaci provedla plnoletá osoba.</li>
+            <li>Rezervující plnoletá osoba nese plnou odpovědnost za nezletilé účastníky rezervace.</li>
+            <li>Osoby mladší 15 let mohou prostor využívat pouze v doprovodu plnoleté osoby, která provedla rezervaci a přebírá za ně odpovědnost.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">2.2 Kapacita prostoru</h3>
+          <ul class="rulesList">
+            <li>Maximální kapacita prostoru je stanovena provozovatelem a klient je povinen ji dodržovat.</li>
+            <li>Cena rezervace je vždy za časový slot, nikoli za jednotlivou osobu.</li>
+            <li>Klient není oprávněn umožnit vstup většímu počtu osob, než dovolují aktuální pravidla provozovatele.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">2.3 Pravidla užívání prostoru</h3>
+          <ul class="rulesList">
+            <li>Klient je povinen přizpůsobit cvičení svému zdravotnímu stavu, schopnostem a zkušenostem.</li>
+            <li>Vstup je povolen pouze v čisté sportovní obuvi.</li>
+            <li>Je zakázáno kouřit, požívat alkohol nebo užívat jiné návykové látky.</li>
+            <li>Je zakázáno poškozovat vybavení, manipulovat se zabezpečením prostoru nebo používat vybavení jinak než obvyklým způsobem.</li>
+            <li>V době nočního klidu, zejména mezi 22:00 a 6:00, je klient povinen chovat se ohleduplně, nepouštět hlasitou hudbu a neházet činkami.</li>
+            <li>Po skončení rezervace je klient povinen uvést prostor do původního stavu, uklidit po sobě a prostor včas opustit.</li>
+            <li>Klient je povinen dodržovat základní hygienická pravidla, používat ručník a chovat se ohleduplně k vybavení i dalším návštěvníkům.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">2.4 Přístup a pohyb v objektu</h3>
+          <ul class="rulesList">
+            <li>Klient je povinen používat vstupní informace a případné kódy pouze v souladu s pokyny provozovatele.</li>
+            <li>Pokud je vstup řešen přes sejf s klíči, je klient povinen po skončení rezervace klíče řádně vrátit.</li>
+            <li>V případě nočního nebo časně ranního vstupu je klient povinen postupovat podle pokynů zaslaných provozovatelem.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">2.5 Odpovědnost za škodu a čas rezervace</h3>
+          <ul class="rulesList">
+            <li>Klient odpovídá za škodu způsobenou na vybavení, zařízení nebo prostoru úmyslně nebo z nedbalosti.</li>
+            <li>Klient je povinen dodržet rezervovaný čas.</li>
+            <li>Pokud dojde k překročení rezervace a tím ke komplikaci další rezervace nebo ke vzniku škody, může být klientovi účtován odpovídající poplatek nebo náhrada škody.</li>
+            <li>Hrubé nebo opakované porušení pravidel může vést k omezení nebo znemožnění budoucích rezervací.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">2.6 Zdraví a bezpečnost</h3>
+          <ul class="rulesList">
+            <li>Klient bere na vědomí, že cvičení představuje fyzickou zátěž a že je jeho povinností zvážit vlastní zdravotní stav před zahájením tréninku.</li>
+            <li>Provozovatel neodpovídá za zdravotní újmu vzniklou při cvičení, pokud nevznikla porušením povinností provozovatele.</li>
+            <li>Provozovatel dále neodpovídá za ztrátu, odcizení nebo poškození osobních věcí klienta ponechaných v prostoru.</li>
+          </ul>
+        </div>
+
+        <div class="rulesCard" id="gdpr">
+          <h2 class="rulesH2">3. Ochrana osobních údajů (GDPR)</h2>
+          <h3 class="rulesH3">3.1 Rozsah zpracování</h3>
+          <p class="rulesP">
+            Osobní údaje klientů jsou zpracovávány pouze v rozsahu nezbytném pro rezervaci, úhradu, komunikaci s klientem, provoz služby a ochranu oprávněných zájmů provozovatele.
+          </p>
+          <h3 class="rulesH3" style="margin-top:16px;">3.2 Jaké údaje mohou být zpracovávány</h3>
+          <ul class="rulesList">
+            <li>jméno a příjmení,</li>
+            <li>e-mail,</li>
+            <li>telefon,</li>
+            <li>údaje o rezervaci,</li>
+            <li>údaje o platbě v rozsahu dostupném provozovateli,</li>
+            <li>technické provozní záznamy,</li>
+            <li>kamerový záznam.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">3.3 Účel zpracování</h3>
+          <ul class="rulesList">
+            <li>realizace rezervace a vstupu do prostoru,</li>
+            <li>komunikace s klientem,</li>
+            <li>plnění zákonných povinností,</li>
+            <li>ochrana majetku a řešení incidentů.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">3.4 Kamerový systém</h3>
+          <ul class="rulesList">
+            <li>Prostor je monitorován kamerovým systémem se záznamem obrazu za účelem ochrany majetku, bezpečnosti a řešení případných incidentů.</li>
+            <li>Kamery nesnímají toaletu, sprchu ani převlékací zónu.</li>
+            <li>Kamerový systém nezaznamenává zvuk a není aktivně monitorován v reálném čase.</li>
+            <li>Záznam je uchováván po dobu nezbytně nutnou, zpravidla maximálně 3 dny, pokud není potřeba delší uchování za účelem řešení konkrétního incidentu nebo sporu.</li>
+          </ul>
+          <h3 class="rulesH3" style="margin-top:16px;">3.5 Doba uchování a práva klienta</h3>
+          <ul class="rulesList">
+            <li>Účetní doklady jsou uchovávány po dobu stanovenou právními předpisy.</li>
+            <li>Údaje o platební kartě provozovatel neukládá.</li>
+            <li>Klient má právo požadovat přístup ke svým osobním údajům, jejich opravu, výmaz, omezení zpracování nebo vznést námitku proti zpracování, pokud to právní úprava umožňuje.</li>
+            <li>V případě pochybností o zákonnosti zpracování má klient právo podat stížnost u Úřadu pro ochranu osobních údajů.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div style="display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;">
+      <div style="color:rgba(255,255,255,.6);font-size:12.5px;line-height:1.6;">
+        IRON ROOM • Podmínky užívání
+      </div>
+      <a class="navPill" href="index.html#contacts">Zpět na web</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
