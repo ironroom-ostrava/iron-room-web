@@ -4,7 +4,7 @@
 <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="5f16803d-d8bd-4aca-8ccc-f4e7729790a4" data-blockingmode="auto" type="text/javascript"></script>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="IRON ROOM – private gym v centru Ostravy. Soukromý slot pro 1–2 osoby, parkování v ceně. Startovací akce IRON50: sleva 50 Kč na každý slot." />
+<meta name="description" content="IRON ROOM – private gym v centru Ostravy. Soukromý slot pro 1–2 osoby, parkování v ceně. Červnová akce: 7+2 vstupy zdarma a měsíční permanentka za 2250 Kč." />
 <title>IRON ROOM – private gym</title>
 
 <style>
@@ -116,7 +116,7 @@ a{text-decoration:none;color:inherit}
 .menu a:hover{color:var(--text)}
 
 
-/* PROMO CAMPAIGN: IRON50 */
+/* PROMO CAMPAIGN: JUNE OFFER */
 .promoTop{
   position:relative;
   z-index:2;
@@ -1450,6 +1450,133 @@ main, section, footer{
 .faqItem summary{ padding: 16px 18px; }
 .faqBody{ padding: 0 18px 16px; }
 
+
+
+/* COMPACT JUNE PROMO BANNER */
+.promoTop--compact .promoTopInner{
+  min-height:auto;
+  display:grid;
+  grid-template-columns:minmax(0, 1fr);
+  align-items:start;
+  gap:12px;
+  padding:16px 22px 18px;
+}
+
+.promoTop--compact .promoTopMain{
+  display:block;
+  text-align:center;
+}
+
+.promoCompactHead{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:7px;
+}
+
+.promoCompactKicker{
+  color:rgba(255,255,255,.74);
+  font-size:13px;
+  font-weight:800;
+}
+
+.promoCompactTitle{
+  color:#fff;
+  font-size:clamp(26px, 3vw, 42px);
+  line-height:1.05;
+  font-weight:950;
+  letter-spacing:-.8px;
+  text-shadow:0 1px 22px rgba(0,0,0,.55);
+}
+
+.promoCompactText{
+  margin:8px auto 0;
+  color:rgba(255,255,255,.78);
+  font-size:15px;
+  line-height:1.55;
+  max-width:1120px;
+}
+
+.promoCompactText b{
+  color:#fff;
+}
+
+.promoCompactGrid{
+  grid-column:1 / -1;
+  display:grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  gap:10px;
+}
+
+.promoCompactBox{
+  border:1px solid rgba(255,255,255,.10);
+  background:rgba(255,255,255,.045);
+  border-radius:18px;
+  padding:13px 12px;
+  text-align:center;
+  box-shadow:0 12px 34px rgba(0,0,0,.20);
+}
+
+.promoCompactLabel{
+  color:rgba(255,255,255,.66);
+  font-size:12.5px;
+  font-weight:900;
+  margin-bottom:6px;
+}
+
+.promoCompactValue{
+  color:var(--brand2);
+  font-size:clamp(19px, 2vw, 25px);
+  line-height:1.1;
+  font-weight:950;
+}
+
+.promoCompactValue a{
+  color:var(--brand2);
+}
+
+.promoCompactMeta{
+  margin-top:6px;
+  color:rgba(255,255,255,.68);
+  font-size:12.5px;
+  line-height:1.4;
+  overflow-wrap:anywhere;
+}
+
+
+@media (max-width: 900px){
+  .promoTop--compact .promoTopInner{
+    grid-template-columns:1fr;
+    text-align:center;
+    padding:15px 16px 17px;
+  }
+
+  .promoCompactHead{
+    justify-content:center;
+  }
+
+
+  .promoCompactGrid{
+    grid-template-columns:repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px){
+  .promoCompactGrid{
+    grid-template-columns:1fr;
+  }
+
+  .promoCompactTitle{
+    font-size:26px;
+  }
+
+  .promoCompactText{
+    font-size:14px;
+  }
+}
+
 </style>
 </head>
 
@@ -1475,13 +1602,44 @@ main, section, footer{
   </div>
 </header>
 
-<div class="promoTop" id="akce">
+<div class="promoTop promoTop--compact" id="akce">
   <div class="wrap promoTopInner">
     <div class="promoTopMain">
-      <span class="promoBadge">Startovací akce</span>
-      <span class="promoTopText"><b>Sleva 50 Kč na každý slot</b> s kódem <span class="promoCode">IRON50</span> — denní slot <b>125 Kč</b>, noční <b>100 Kč</b>. Rezervaci vytvoř do <b>8. 6. 2026</b>.</span>
+      <div class="promoCompactHead">
+        <span class="promoBadge">Akce na červen</span>
+        <span class="promoCompactKicker">Balíčky pro ty, co to myslí vážně</span>
+      </div>
+      <div class="promoCompactTitle">Trénuj pravidelně výhodněji.</div>
+      <div class="promoCompactText">
+        V červnu nabízíme zvýhodněné balíčky: <b>7+2 vstupy zdarma</b> a měsíční permanentku za <b>2&nbsp;250 Kč</b>. Domluva přes e-mail nebo telefon.
+      </div>
     </div>
-    <a class="promoTopBtn" href="https://iron-room.reenio.cz/cs/" target="_blank" rel="noopener">Rezervovat se slevou</a>
+
+    <div class="promoCompactGrid" aria-label="Přehled červnové akce">
+      <div class="promoCompactBox">
+        <div class="promoCompactLabel">Balíček vstupů</div>
+        <div class="promoCompactValue">7+2</div>
+        <div class="promoCompactMeta">vstupy zdarma navíc</div>
+      </div>
+
+      <div class="promoCompactBox">
+        <div class="promoCompactLabel">Permanentka</div>
+        <div class="promoCompactValue">2&nbsp;250 Kč</div>
+        <div class="promoCompactMeta">měsíční balíček</div>
+      </div>
+
+      <div class="promoCompactBox">
+        <div class="promoCompactLabel">Kontakt</div>
+        <div class="promoCompactValue"><a href="mailto:ironroom.ostrava@gmail.com">E-mail</a></div>
+        <div class="promoCompactMeta">ironroom.ostrava@gmail.com</div>
+      </div>
+
+      <div class="promoCompactBox">
+        <div class="promoCompactLabel">Telefon</div>
+        <div class="promoCompactValue"><a href="tel:+420605421134">605&nbsp;421&nbsp;134</a></div>
+        <div class="promoCompactMeta">zavolej pro domluvu</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -1514,17 +1672,9 @@ main, section, footer{
           </div>
           <div class="priceRight"><b>150 Kč</b><span class="priceMeta">/ 80 min</span></div>
         </div>
-
-        <div class="promoPrice">
-          <div class="promoPriceLabel">Startovací akce s kódem <span class="promoCode">IRON50</span></div>
-          <div class="promoPriceValue">Denní 125 Kč • noční 100 Kč</div>
-          <div class="promoPriceSmall">Kód můžeš použít opakovaně na rezervace vytvořené do 8. 6. 2026.</div>
-        </div>
-
         <div class="priceNote"><ul class="slot-bullets">
-  <li>Přijď sám, s kamarádem nebo trenérem, max. 2 osoby</li>
-  <li>Cena je za slot, ne za osobu – ve dvou cvičíš běžně od 75 Kč za 80 minut</li>
-  <li>Akční kód <b>IRON50</b> zadáš při rezervaci. Podmínky akce najdeš níže.</li>
+  <li>Přijď sám, s kamarádem nebo trenérem, cena je pořád stejná!</li>
+  <li>Komfortně si u nás zacvičí 2 lidi, maximální počet jsou 3 osoby.</li>
 </ul></div>
       </div>
 
@@ -1532,50 +1682,6 @@ main, section, footer{
   </div>
 </section>
 
-<section class="section promoSection" id="akce-podminky">
-  <div class="wrap">
-    <div class="promoSectionCard">
-      <div class="promoSectionGrid">
-        <div class="promoSectionTop">
-          <div>
-            <span class="promoBadge">IRON50</span>
-            <h2>Rezervuj teď, cvič levněji až do konce roku.</h2>
-            <p class="promoSectionText">Během startovací akce zadáš při rezervaci kód <span class="promoCode">IRON50</span> a systém ti odečte 50 Kč z každého slotu. Kód můžeš použít opakovaně, takže si klidně naházej víc termínů dopředu.</p>
-          </div>
-          <a class="promoSectionBtn" href="https://iron-room.reenio.cz/cs/" target="_blank" rel="noopener">Rezervovat</a>
-        </div>
-
-        <div class="promoCards">
-          <div class="promoDealCard">
-            <div class="promoDealTitle">Sleva</div>
-            <div class="promoDealPrice">−50 Kč</div>
-            <div class="promoDealMeta">na každý rezervovaný slot</div>
-          </div>
-
-          <div class="promoDealCard">
-            <div class="promoDealTitle">Denní / noční cena</div>
-            <div class="promoDealPrice">125 / 100 Kč</div>
-            <div class="promoDealMeta">po zadání kódu IRON50</div>
-          </div>
-
-          <div class="promoDealCard">
-            <div class="promoDealTitle">Kdy rezervovat</div>
-            <div class="promoDealPrice">do 8. 6.</div>
-            <div class="promoDealMeta">rozhoduje datum vytvoření rezervace</div>
-          </div>
-
-          <div class="promoDealCard">
-            <div class="promoDealTitle">Podmínky</div>
-            <div class="promoDealPrice">1× přesun</div>
-            <div class="promoDealMeta">nejpozději 24 h předem, rezervace není vratná</div>
-          </div>
-        </div>
-
-        <p class="promoTerms">Akce platí pro rezervace vytvořené během promo období. Samotné termíny můžeš rezervovat až do konce roku. Rezervace se slevovým kódem nejde zrušit ani vrátit, ale můžeš ji 1× přesunout nejpozději 24 hodin před začátkem slotu.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="section" id="how">
   <div class="wrap">
@@ -1790,12 +1896,12 @@ main, section, footer{
 
       <details class="faqItem">
         <summary>Můžu rezervaci zrušit nebo přesunout?</summary>
-        <div class="faqBody">Běžnou rezervaci můžeš přesunout nejpozději 24 h před začátkem slotu. Rezervace se slevovým kódem IRON50 má vlastní podmínky – nejde zrušit ani vrátit, ale můžeš ji 1× přesunout nejpozději 24 hodin předem.</div>
+        <div class="faqBody">Běžnou rezervaci můžeš přesunout nejpozději 24 h před začátkem slotu. U zvýhodněných balíčků a permanentek platí podmínky domluvené při nákupu.</div>
       </details>
 
       <details class="faqItem">
-        <summary>Jak funguje slevový kód IRON50?</summary>
-        <div class="faqBody">Při rezervaci zadáš kód IRON50 a systém odečte 50 Kč z ceny slotu. Kód můžeš použít opakovaně na rezervace vytvořené do 8. 6. 2026. Samotné termíny můžeš rezervovat až do konce roku.</div>
+        <summary>Jak funguje červnová akce?</summary>
+        <div class="faqBody">V červnu nabízíme zvýhodněné balíčky: 7+2 vstupy zdarma a měsíční permanentku za 2 250 Kč. Pro více informací napiš na <a href="mailto:ironroom.ostrava@gmail.com">ironroom.ostrava@gmail.com</a> nebo volej <a href="tel:+420605421134">605&nbsp;421&nbsp;134</a>.</div>
       </details>
 
       <details class="faqItem">
